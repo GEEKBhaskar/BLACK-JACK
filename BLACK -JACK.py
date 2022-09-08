@@ -74,7 +74,7 @@ class Hand:
         self.value += values[card.rank]
         
         if card.rank == 'Ace':
-            self.ace += 1
+            self.aces += 1
             
     def adjust_for_ace(self):
         while self.value > 21 and self.aces > 0:
